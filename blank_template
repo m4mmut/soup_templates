@@ -1,0 +1,221 @@
+/****************************
+*****************************
+* Blank Template for soup.io 
+*****************************
+* by mammut *****************
+*****************************
+*****************************
+* Elements included:
+* - Soup badge
+* - Friends list
+* - Avatar
+* - Icons
+* - Dates
+* - Description
+* - Who reposted
+* - Endless scrolling
+* - Search Box
+* - Groups
+* - Galleries
+* - Tags
+*****************************
+* fork it on GitHub *********
+*****************************
+* github.com/m4mmut/ ********
+*****************************
+****************************/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+
+#adlayoutcontainer {
+ font-family: 'Open Sans', sans-serif;
+ text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#adlayoutcontainer h1, #adlayoutcontainer h2, #adlayoutcontainer h3, #adlayoutcontainer h4, #adlayoutcontainer h5 {
+ font-family: 'Playfair Display', serif;font-family: 'Playfair Display', serif;
+ color:#000;
+}
+
+#adlayoutcontainer h1 a {
+ text-decoration: none;
+ font-size:22px;
+}
+
+#adlayoutcontainer a {
+ color:#000;
+}
+
+#adlayoutcontainer ul {
+ list-style-type: none;
+ padding-left: 0px;
+}
+
+#adlayoutcontainer li {
+ float:left;
+ padding: 2px;
+}
+
+#adlayoutcontainer ul img{
+ border-radius: 18px
+}
+
+#headercontainer2 {
+ position:fixed;
+ width:300px;
+ float:left;
+ padding-left:50px;
+ padding-right:50px;
+}
+
+#title {
+ margin-bottom: 40px;
+ width:320px;
+}
+
+h1.admin-edit-off{
+ margin-top: 0px;
+}
+
+#avatar img {
+ display:none;
+}
+
+#accountcontainer {
+ display:none;
+}
+
+#searchcontainer {
+ margin-top:25px;
+}
+
+#searchcontainer input.search{
+ height: 50px;
+ width: 250px;
+ margin-right: 100%;
+ background: #fff url(http://asset-1.soup.io/asset/9883/2587_1e3c.png) no-repeat;
+ border: none;
+ float: left;
+ padding-left: 45px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+ font-family: 'Open Sans', sans-serif;
+ -webkit-transition: background .99s ease;
+ -moz-transition: background .99s ease;
+ -ms-transition: background .99s ease;
+ -o-transition: background .99s ease;
+ transition: background .99s ease;
+}
+
+#searchcontainer input.search:hover,
+#searchcontainer input.search:focus,
+#searchcontainer input.search:active{
+ outline:none;
+ width:250px;
+ background: #f5f5f5 url(http://asset-1.soup.io/asset/9883/2587_1e3c.png) no-repeat;
+}
+
+#searchcontainer input.btn {
+ display:none;
+}
+
+#groupscontainer{
+ width: 140px;
+ margin-right: 20px;
+ float: left;
+}
+
+#friendscontainer{
+ width: 140px;
+ float: left;
+}
+
+#bubble {
+ display:none !important;
+}
+
+#main {
+ position:relative;
+ left:400px;
+ float:left;
+ width:500px;
+ margin-left:100px;
+}
+
+#main img{
+ max-width:500px;
+}
+
+.post {
+ display: inline-block;
+ padding-top: 80px;
+ padding-bottom: 200px;
+}
+
+.post div.icon.author{
+ display:none;
+}
+
+.post p{
+ text-shadow:none;
+}
+
+.imagecontainer .caption{
+ display:none;
+ }
+
+.state-caption .caption{
+ display:block !important;
+ position: relative;
+ top: -46px;
+ background: #f5f5f5;
+ padding: 10px;
+ opacity: 0.8;
+ filter: alpha(opacity=80);
+}
+
+.post .source, .post .description, .post .tags  {
+ float:left;
+ margin-top: 20px !important;
+ color:#aaa;
+ text-shadow:none;
+ padding-right: 20px;
+}
+
+.post span.quote{
+ display:none;
+}
+
+.post blockquote span.body {
+ font-family: 'Amatic SC', cursive;
+ font-size:3em;
+}
+
+.source a{
+ color:#aaa !important;
+ text-decoration:none;
+}
+
+.source img{
+ position:relative;
+ top: 2px;
+ margin-left: 5px;
+ /*
+ -webkit-filter: grayscale(1);
+ -webkit-filter: grayscale(100%);
+ filter: gray;
+ filter: grayscale(100%);*/
+ border-radius: 18px;
+}
+
+@media only screen and (max-width: 1023px) {
+ #headercontainer2 {
+  position:static;
+ }
+ #main {
+  position:static;
+ }
+}
